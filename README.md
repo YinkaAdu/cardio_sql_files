@@ -1,4 +1,4 @@
-# Investigating the Risk of CVD from Multiple Perspectives
+# Health Monitoring Data Analysis to Inform Personalized CVD Care
  
 ## Background
 Cardiovascular Disease (CVD) more commonly known as heart disease remains a major global health challenge. At least 20 million people die of CVD each year (WHO, 2021). While many deaths are preventable, progress in reducing these deaths has slowed down in recent times. 
