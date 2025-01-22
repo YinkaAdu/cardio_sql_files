@@ -11,7 +11,7 @@ This study aims to better understand the risk factors for heart disease. The aut
 ### Cardiovascular Disease (CVD) Incidence across different Body Mass Index (BMI) Categories
 The first image provides a summary of the data as well as some of the considered parameters in this study. The BMI categories were assigned according to the WHO crude estimate for BMI classification. Participant population was first grouped by the presence of CVD and further grouped by gender. 
 
-![cvd_project_visualisations](https://github.com/user-attachments/assets/acfdbf7b-13bd-4899-9203-c5f33745c021)
+https://github.com/user-attachments/assets/fe285644-468a-4d93-8e6f-2d9a95c1b11a
 
 ### Lifestyle Habits vs CVD Incidence
 The final image is an interactive visual depicting a permutation of lifestyle habits in 8 subplots that can be filtered/sliced to select groups of interest to identify which factors, individually and together, increase the risk of heart disease. 
