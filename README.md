@@ -4,7 +4,7 @@
 Cardiovascular Disease (CVD) more commonly known as heart disease remains a major global health challenge. At least 20 million people die of CVD each year (WHO, 2021). While many deaths are preventable, progress in reducing these deaths has slowed down in recent times. 
  
 ## Project Goal
-This study aims to better understand the risk factors for heart disease specifically to identify which factors, individually and together, increase the risk of heart disease. This information could potentially inform the use of healthcare data to increase the precision and accuracy of cardiovascular disease prediction. The author analysed data from about 70,000 people, studying the relationship between factors such as age, gender, blood sugar, cholesterol, weight, and lifestyle habits.
+This study aims to better understand the risk factors for heart disease specifically to identify which factors, individually and together, increase the risk of heart disease. This information could potentially inform the use of healthcare data to increase the precision and accuracy of cardiovascular disease prediction. The author analysed data from about 70,000 participants, studying the relationship between factors such as age, gender, blood sugar, cholesterol, weight, and lifestyle habits.
 
 ## Statistical Analysis
 Statistical analysis was carried our in R to answer the following questions:
