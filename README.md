@@ -166,8 +166,8 @@ table(df$cardio_condition, df$cholesterol_levels)
 chisq.test(table(df$cardio_condition, df$cholesterol_levels))
 ``` 
 ## Challenges Encountered
-1. Most of the data used was categorical: Smoker, active and alcohol consumption were all boolean data type even though it is unclear what the threshold for an active lifestyle is for instance.
-2. There was no detail about CVD types: CVDs comprise a broad range of disease that are often influenced in different was by the factors studied. Knowing what types of CVD participants were living with would most likely reduce result ambiguity.
+1. Most of the data used was categorical: Smoker, active and alcohol consumption were all boolean data type even though it is unclear what the threshold for an active lifestyle is for instance. Hence, the limited level of statistical analysis.
+2. There was no detail about CVD types: CVDs comprise a broad range of diseases that are often influenced in different ways by the factors studied. Knowing what types of CVD participants were living with would most likely have reduced result ambiguity.
 
 ## Contributors and Collaborators
 Contributions and comments are welcome on this project. 
