@@ -13,6 +13,7 @@ Statistical analysis was carried our in R to answer the following questions:
 
 **Question 1** was tackled using Pearson's Chi-squared test with Yates' continuity correction. While a significantly higher proportion of the population are non-smokers, non-drinkers and physically active, analysis results suggest that that smoking, physical activity levels, glucose levels, and cholesterol levels are significantly associated with the presence of cardiovascular conditions in the dataset.
 Alcohol consumption on the other hand may have a weaker or no significant association with cardiovascular conditions based on this analysis.
+
 **Question 2** was tackled using Welch Two Sample t-test. The analysis provides strong evidence that individuals with cardiovascular conditions have a significantly higher mean BMI compared to those without. 
 
 ![cvd_stat_visual](https://github.com/user-attachments/assets/88ce4465-1e02-4ad5-849b-97d16b8ddb1e)
