@@ -67,7 +67,7 @@ table(df$alcohol, df$active)
 chisq.test(table(df$alcohol, df$active)) 
 
 
-# 3. Do CVD patients differ in body_mass_index to people without CVD?
+# 3. Do CVD patients differ in body_mass_index from people without CVD?
 
 t.test(body_mass_index ~ cardio_condition, data = df) 
 
