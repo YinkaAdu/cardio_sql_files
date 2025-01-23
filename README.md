@@ -25,7 +25,7 @@ The first image provides a summary of the data as well as some of the considered
 The second image shows further exploration of the lifestyle habits, glucose and cholesterol levels of the female population. 
 The third image shows identical parameters for the male population. 
 
-https://github.com/user-attachments/assets/fe285644-468a-4d93-8e6f-2d9a95c1b11a
+https://github.com/user-attachments/assets/2ec30ed8-6452-4bf3-a424-46dfe9895ee1
 
 ### Lifestyle Habits vs CVD Incidence
 The final image is an interactive visual depicting a permutation of lifestyle habits in 8 subplots that can be filtered/sliced to select groups of interest to identify which factors, individually and together, increase the risk of heart disease. 
