@@ -164,7 +164,6 @@ chisq.test(table(df$cardio_condition, df$glucose_levels))
 #   e. Cholesterol Levels
 table(df$cardio_condition, df$cholesterol_levels) 
 chisq.test(table(df$cardio_condition, df$cholesterol_levels))
-foo()
 ``` 
 ## Challenges Encountered
 1. Most of the data used was categorical: Smoker, active and alcohol consumption were all boolean data type even though it is unclear what the threshold for an active lifestyle is for instance.
