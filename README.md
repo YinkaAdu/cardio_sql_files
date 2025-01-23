@@ -4,12 +4,25 @@
 Cardiovascular Disease (CVD) more commonly known as heart disease remains a major global health challenge. At least 20 million people die of CVD each year (WHO, 2021). While many deaths are preventable, progress in reducing these deaths has slowed down in recent times. 
  
 ## Project Goal
-This study aims to better understand the risk factors for heart disease. The author analysed data from about 70,000 people, studying the relationship between factors such as age, gender, blood sugar, cholesterol, weight, and lifestyle habits.
+This study aims to better understand the risk factors for heart disease specifically to identify which factors, individually and together, increase the risk of heart disease. This information could potentially inform the use of healthcare data to increase the precision and accuracy of cardiovascular disease prediction. The author analysed data from about 70,000 people, studying the relationship between factors such as age, gender, blood sugar, cholesterol, weight, and lifestyle habits.
+
+## Statistical Analysis
+Statistical analysis was carried our in R to answer the following questions:
+1. Do CVD patients and people without CVD differ in their lifestyle habits (smoking, drinking, activity), glucose levels, and cholesterol levels?
+2. Do CVD patients differ in Body Mass Index (BMI) from people without CVD?
+
+**Question 1** was tackled using Pearson's Chi-squared test with Yates' continuity correction. While a significantly higher proportion of the population are non-smokers, non-drinkers and physically active, analysis results suggest that that smoking, physical activity levels, glucose levels, and cholesterol levels are significantly associated with the presence of cardiovascular conditions in the dataset.
+Alcohol consumption on the other hand may have a weaker or no significant association with cardiovascular conditions based on this analysis.
+**Question 2** was tackled using Welch Two Sample t-test. The analysis provides strong evidence that individuals with cardiovascular conditions have a significantly higher mean BMI compared to those without. 
+
+![cvd_stat_visual](https://github.com/user-attachments/assets/88ce4465-1e02-4ad5-849b-97d16b8ddb1e)
 
 ## Sample Visuals
 
 ### Cardiovascular Disease (CVD) Incidence across different Body Mass Index (BMI) Categories
 The first image provides a summary of the data as well as some of the considered parameters in this study. The BMI categories were assigned according to the WHO crude estimate for BMI classification. Participant population was first grouped by the presence of CVD and further grouped by gender. 
+The second image shows further exploration of the lifestyle habits, glucose and cholesterol levels of the female population. 
+The third image shows identical parameters for the male population. 
 
 https://github.com/user-attachments/assets/fe285644-468a-4d93-8e6f-2d9a95c1b11a
 
@@ -116,6 +129,42 @@ plt.savefig('BMIcategory_distribution_bar_chart.png')
 ```
 Python was also used to add the multiple subplots to Power BI. Details of this  can be found in the repository associated with this project. It includes notebooks containing code and visual output.
 
+### Snippets of R code for Analysis
+```{r}
+# Find the path of working directory
+getwd()
+
+# Load necessary libraries
+library(dplyr)
+library(ggplot2)
+library(stats)
+
+# Create a data frame from cvd_dataset
+df <- data.frame(cvd_dataset)
+
+# 1. Do CVD patients and people without CVD differ in their lifestyle habits (smoking, drinking, activity), glucose levels, and cholesterol levels?
+
+#   a. Smoking
+table(df$cardio_condition, df$smoker) 
+chisq.test(table(df$cardio_condition, df$smoker)) 
+
+#   b. Alcohol Consumption
+table(df$cardio_condition, df$alcohol) 
+chisq.test(table(df$cardio_condition, df$alcohol)) 
+
+#   c. Activity
+table(df$cardio_condition, df$active) 
+chisq.test(table(df$cardio_condition, df$active)) 
+
+#   d. Glucose Levels
+table(df$cardio_condition, df$glucose_levels) 
+chisq.test(table(df$cardio_condition, df$glucose_levels)) 
+
+#   e. Cholesterol Levels
+table(df$cardio_condition, df$cholesterol_levels) 
+chisq.test(table(df$cardio_condition, df$cholesterol_levels))
+foo()
+``` 
 ## Challenges Encountered
 1. Most of the data used was categorical: Smoker, active and alcohol consumption were all boolean data type even though it is unclear what the threshold for an active lifestyle is for instance.
 2. There was no detail about CVD types: CVDs comprise a broad range of disease that are often influenced in different was by the factors studied. Knowing what types of CVD participants were living with would most likely reduce result ambiguity.
